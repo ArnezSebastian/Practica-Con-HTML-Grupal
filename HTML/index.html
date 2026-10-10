@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practica de Pagina web</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Mythic Byte Oficial</h1>
+        <nav>
+            <a href="https://inicio.com">Inicio</a>
+            <a href="https://reseñasProducto.com">Reseñas</a>
+            <a href="https://sobreNosotros.com">Nosotros</a>
+            <a href="https://masProductos.com">Otros Proyectos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Don´t Call Me Now</h2>
+            <p>
+                <strong>
+                    En este juego de terror 2D tomarás el papel de 3 protagonista que tendrán que pasar por una tortura psicologica para poder escapar de un aterrador espiritu vengativo. ¿Podrás lograr ayudarlos?
+                </strong>
+            </p>
+            <figure>
+                <img src="imagenDeProducto.img" alt="Imagen demostrativa de videojuego en desarrollo.">
+                <figcaption>Producto en desarrollo por la empresa.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Requisitos del sistema</h2>
+            <h3>Requisitos Minimos</h3>
+            <ul>
+                <li>Sistema Operativo: Windows 10/11</li>
+                <li>Memoria Ram: 4 GB</li>
+                <li>Almacenamiento: 5 GB de espacio necesario</li>
+            </ul>
+            <h3>Requisitos Recomendados</h3>
+            <ul>
+                <li>Sistema Operativos: Windows 11</li>
+                <li>Memoria Ram: 8 GB</li>
+                <li>Almacenamiento: 8 Gb de espacio necesario</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Instalación</h2>
+            <ol>
+                <li>Descargue el instalador desde este <a href="http://juegoPrototipo.com">enlace</a>.</li>
+                <li>Una vez descagado ejecute el instalador y presione continuar. Si lo desea puede cambiar la ruta de instalación presionando en buscar.</li>
+                <li>Al finalizar la instalación cierre el instalador y ejecute el juego.</li>
+            </ol>
+        </section>
+
+        <section id="beta">
+            <h2>Formulario de Contacto</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Datos de la cuenta</legend>
+
+                    <label for="nombre_usuario">Nombre:</label>
+                    <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Usuario" required>
+
+                    <label for="email_usuario">Email:</label>
+                    <input type="email" id="email_usuario" name="email_usuario" placeholder="usuario@gmail.com" required>
+
+                    <input type="radio" id="pc" name="plataforma" value="pc">
+                    <label for="pc">PC</label>
+
+                    <input type="radio" id="consola" name="plataforma" value="consola">
+                    <label for="consola">Consola</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias de Juego</legend>
+
+                    <p>Géneros favoritos:</p>
+                    <input type="checkbox" id="terror" name="genero" value="terror">
+                    <label for="terror">Terror</label>
+
+                    <input type="checkbox" id="accion" name="genero" value="accion">
+                    <label for="accion">Acción</label>
+
+                    <br><br>
+                    <textarea name="descripcion" id="descripcion" placeholder="Ingrese su consulta"></textarea>
+
+                    <br><br>
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones de la Beta</label>
+                </fieldset>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mythic Byte Oficial. Todos los derechos reservados.</p>
+        <address>
+            Para más información contactanos al <a href="mailto:contacto@mythicbyteoficial.com">contacto@mythicbyteoficial.com</a>
+        </address>
+    </footer>
 </body>
 </html>
